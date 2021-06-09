@@ -62,7 +62,7 @@ if (isset($_POST['login_user'])) {
     }
   
     if (count($errors) == 0) {
-        $password = md5($password);
+        $password = ($password);
         $query = "SELECT * FROM sign_in WHERE username='$username' AND pass='$password'";
         $results = mysqli_query($db, $query);
         if (mysqli_num_rows($results) == 1) {
