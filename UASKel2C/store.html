@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YUI | Store</title>
+    <link rel="stylesheet" href="yui1.css" />
+    <script src="store.js" async></script>
+</head>
+
+<body>
+    <header class="main-header">
+        <nav class="nav main-nav">
+            <ul>
+                <li><a href="home.html">HOME</a></li>
+                <li><a href="store.html">STORE</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="member.html">MEMBERSHIP</a></li>
+                <li><a href="logout.php">LOG OUT</a></li>
+                <li><a href="staff.html">STAFF</a></li>
+            </ul>
+        </nav>
+        <h2 class="name name-large">YUI</h2>
+    </header>
+
+    <section class="container-fluid content-section">
+        <h2 class="section-header">Albums & Singles</h2><br>
+        <div class="shop-items">
+            <div class="shop-item">
+                <span class="shop-item-title">Album - Holidays In The Sun</span>
+                <a href="https://en.wikipedia.org/wiki/Holidays_in_the_Sun_(album)" target="blank">
+                    <img class="shop-item-image" src="img/YUI-hits_.jpg"></a>
+                <div class="shop-item-details">
+                    <span class="shop-item-price">$29.99</span>
+                    <button class="btn btn-primary shop-item-button" type="button">Add To Cart</button>
+                </div>
+            </div>
+            <div class="shop-items">
+                <div class="shop-item">
+                    <span class="shop-item-title">Album - My Short Stories</span>
+                    <a href="https://en.wikipedia.org/wiki/My_Short_Stories" target="blank">
+                        <img class="shop-item-image" src="img/YUI-mss.jpg"></a>
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">$29.99</span>
+                        <button class="btn btn-primary shop-item-button" type="button">Add To Cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="shop-items">
+                <div class="shop-item">
+                    <span class="shop-item-title">Album - I Loved Yesterday</span>
+                    <a href="https://en.wikipedia.org/wiki/I_Loved_Yesterday" target="blank">
+                        <img class="shop-item-image" src="img/YUI-ily.jpg"></a>
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">$29.99</span>
+                        <button class="btn btn-primary shop-item-button" type="button">Add To Cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="shop-items">
+                <div class="shop-item">
+                    <span class="shop-item-title">Album - How Crazy Your Love</span>
+                    <a href="https://en.wikipedia.org/wiki/How_Crazy_Your_Love" target="blank">
+                        <img class="shop-item-image" src="img/YUI-hcyl.jpg"></a>
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">$29.99</span>
+                        <button class="btn btn-primary shop-item-button" type="button">Add To Cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="shop-items">
+                <div class="shop-item">
+                    <span class="shop-item-title">Album - Can't Buy My Love</span>
+                    <a href="https://en.wikipedia.org/wiki/Can%27t_Buy_My_Love" target="blank">
+                        <img class="shop-item-image" src="img/YUI-cbml.jpg"></a>
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">$29.99</span>
+                        <button class="btn btn-primary shop-item-button" type="button">Add To Cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="shop-items">
+                <div class="shop-item">
+                    <span class="shop-item-title">Album - Garden Green Pop</span>
+                    <a href="https://en.wikipedia.org/wiki/Green_Garden_Pop" target="blank">
+                        <img class="shop-item-image" src="img/YUI-ggp.jpg"></a>
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">$29.99</span>
+                        <button class="btn btn-primary shop-item-button" type="button">Add To Cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="shop-items">
+                <div class="shop-item">
+                    <span class="shop-item-title">Single - Love & Truth</span>
+                    <a href="https://en.wikipedia.org/wiki/Love_%26_Truth" target="blank">
+                        <img class="shop-item-image" src="img/YUI-lat.jpg"></a>
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">$9.99</span>
+                        <button class="btn btn-primary shop-item-button" type="button">Add To Cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="shop-items">
+                <div class="shop-item">
+                    <span class="shop-item-title">Single - Summer Song</span>
+                    <a href="https://en.wikipedia.org/wiki/Summer_Song_(Yui_song)" target="blank">
+                        <img class="shop-item-image" src="img/YUI-ss.jpg"></a>
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">$9.99</span>
+                        <button class="btn btn-primary shop-item-button" type="button">Add To Cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="container-fluid content-section">
+        <h2 class="section-header">CART</h2>
+        <div class="cart-row">
+            <span class="cart-item cart-header cart-column">ITEM</span>
+            <span class="cart-price cart-header cart-column">PRICE</span>
+            <span class="cart-quantity cart-header cart-column">QUANTITY</span>
+        </div>
+        <div class="cart-items"></div>
+        <div class="cart-total">
+            <strong class="cart-total-title">Total</strong>
+            <span class="cart-total-price">$0</span>
+        </div>
+        <button class="btn btn-primary btn-purchase" type="button">PURCHASE</button>
+    </section>
+
+    <footer class="main-footer">
+        <div class="container-fluid main-footer-container">
+            <h3 class="name">YUI</h3>
+            <ul class="nav footer-nav">
+                <li>
+                    <a href="https://www.youtube.com/user/yuiSMEJ/videos" target="blank">
+                        <img src="img/yt.png"></a>
+                </li>
+                <li>
+                    <a href="https://www.instagram.com/yui_flower_flower/?hl=en" target="blank">
+                        <img src="img/ig1.png"></a>
+                </li>
+                <li>
+                    <a href="https://open.spotify.com/artist/5WBO8UyOuJ1l7ZBqqBimpO" target="blank">
+                        <img src="img/sptf.png"></a>
+                </li>
+                <li>
+                    <a href="https://www.unsrat.ac.id/" target="blank">
+                        <img src="img/logounsrat.png"></a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+</body>
+
+</html>
